@@ -1,0 +1,35 @@
+.navbar-default{
+  -moz-border-radius: 5px 5px 0px 0px !important;
+  -webkit-border-radius: 5px 5px 0px 0px !important;
+  border-radius: 5px 5px 0px 0px !important;
+
+}
+.our-edit{
+  display: inline-block;
+  background-color: #17A2E7;
+  width: 7%;
+  margin: 0px !important;
+  height: 100%;
+  color: #fff;
+  -moz-border-radius: 5px 0px 0px 0px !important;
+  -webkit-border-radius: 5px 0px 0px 0px !important;
+  border-radius: 5px 0px 0px 0px !important;
+}
+
+.our-icon{
+  margin: 0 20%;
+}
+
+.our-logo{
+  font-size: 30px;
+  margin: 0 40% !important;
+}
+.our-logo-div{
+  display: inline !important;
+  /*margin-bottom: -10px !important;*/
+}
+
+.our-body{
+  margin-top: 100px !important;
+  padding: 0 20px;
+}
