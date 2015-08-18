@@ -1,3 +1,6 @@
 var app = angular.module("main");
 
-app.value("baseUrl", "http://10.0.20.25:3000/");
+var url1 = "http://localhost:3000/";
+var url2 = "http://192.168.100.59:3000/";
+
+app.value("baseUrl", url2);
