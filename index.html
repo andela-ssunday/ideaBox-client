@@ -33,85 +33,18 @@
 
           <div class="row">
 
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" ng-repeat="idea in ideas | orderBy : '-created_at'">
               <div class="card bg-facebook white-text">
                 <div class="card-content">
-                  <div style="min-height: 140px;">
-                    <h2 class="f18 lh-13 w300 no-margin white-text">Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.</h2>
-                    <h5 class="f11 no-margin blue-text lighten-4 p-b-25">10 April, 2016 · <i class="fa fa-globe"></i></h5> </div>
-                  <div class="pull-right p-5"> <i class="fa fa-thumbs-o-up"></i> 3123 &nbsp;&nbsp; <i class="fa fa-comment-o"></i> 241 </div> <i class="fa fa-facebook f18"></i> </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="card bg-facebook white-text">
-                <div class="card-content">
-                  <div style="min-height: 140px;">
-                    <h2 class="f18 lh-13 w300 no-margin white-text">Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.</h2>
-                    <h5 class="f11 no-margin blue-text lighten-4 p-b-25">10 April, 2016 · <i class="fa fa-globe"></i></h5> </div>
-                  <div class="pull-right p-5"> <i class="fa fa-thumbs-o-up"></i> 3123 &nbsp;&nbsp; <i class="fa fa-comment-o"></i> 241 </div> <i class="fa fa-facebook f18"></i> </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="card bg-facebook white-text">
-                <div class="card-content">
-                  <div style="min-height: 140px;">
-                    <h2 class="f18 lh-13 w300 no-margin white-text">Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.</h2>
-                    <h5 class="f11 no-margin blue-text lighten-4 p-b-25">10 April, 2016 · <i class="fa fa-globe"></i></h5> </div>
-                  <div class="pull-right p-5"> <i class="fa fa-thumbs-o-up"></i> 3123 &nbsp;&nbsp; <i class="fa fa-comment-o"></i> 241 </div> <i class="fa fa-facebook f18"></i> </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="card bg-facebook white-text">
-                <div class="card-content">
-                  <div style="min-height: 140px;">
-                    <h2 class="f18 lh-13 w300 no-margin white-text">Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.</h2>
-                    <h5 class="f11 no-margin blue-text lighten-4 p-b-25">10 April, 2016 · <i class="fa fa-globe"></i></h5> </div>
+                  <div style="min-height: 140px;">{{idea.title}}
+                    <h2 class="f18 lh-13 w300 no-margin white-text">{{idea.content}}</h2>
+                    <h5 class="f11 no-margin blue-text lighten-4 p-b-25">{{idea.created_at | date}}</h5> </div>
                   <div class="pull-right p-5"> <i class="fa fa-thumbs-o-up"></i> 3123 &nbsp;&nbsp; <i class="fa fa-comment-o"></i> 241 </div> <i class="fa fa-facebook f18"></i> </div>
               </div>
             </div>
 
           </div>
 
-          <div class="row">
-
-            <div class="col-lg-3 col-md-6">
-              <div class="card bg-facebook white-text">
-                <div class="card-content">
-                  <div style="min-height: 140px;">
-                    <h2 class="f18 lh-13 w300 no-margin white-text">Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.</h2>
-                    <h5 class="f11 no-margin blue-text lighten-4 p-b-25">10 April, 2016 · <i class="fa fa-globe"></i></h5> </div>
-                  <div class="pull-right p-5"> <i class="fa fa-thumbs-o-up"></i> 3123 &nbsp;&nbsp; <i class="fa fa-comment-o"></i> 241 </div> <i class="fa fa-facebook f18"></i> </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="card bg-facebook white-text">
-                <div class="card-content">
-                  <div style="min-height: 140px;">
-                    <h2 class="f18 lh-13 w300 no-margin white-text">Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.</h2>
-                    <h5 class="f11 no-margin blue-text lighten-4 p-b-25">10 April, 2016 · <i class="fa fa-globe"></i></h5> </div>
-                  <div class="pull-right p-5"> <i class="fa fa-thumbs-o-up"></i> 3123 &nbsp;&nbsp; <i class="fa fa-comment-o"></i> 241 </div> <i class="fa fa-facebook f18"></i> </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="card bg-facebook white-text">
-                <div class="card-content">
-                  <div style="min-height: 140px;">
-                    <h2 class="f18 lh-13 w300 no-margin white-text">Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.</h2>
-                    <h5 class="f11 no-margin blue-text lighten-4 p-b-25">10 April, 2016 · <i class="fa fa-globe"></i></h5> </div>
-                  <div class="pull-right p-5"> <i class="fa fa-thumbs-o-up"></i> 3123 &nbsp;&nbsp; <i class="fa fa-comment-o"></i> 241 </div> <i class="fa fa-facebook f18"></i> </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="card bg-facebook white-text">
-                <div class="card-content">
-                  <div style="min-height: 140px;">
-                    <h2 class="f18 lh-13 w300 no-margin white-text">Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.</h2>
-                    <h5 class="f11 no-margin blue-text lighten-4 p-b-25">10 April, 2016 · <i class="fa fa-globe"></i></h5> </div>
-                  <div class="pull-right p-5"> <i class="fa fa-thumbs-o-up"></i> 3123 &nbsp;&nbsp; <i class="fa fa-comment-o"></i> 241 </div> <i class="fa fa-facebook f18"></i> </div>
-              </div>
-            </div>
-
-          </div>
 
 
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">

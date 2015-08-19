@@ -1,12 +1,19 @@
 var app = angular.module("main");
 app.factory("ideaService", ['$http','baseUrl', function($http,baseUrl){
+
   return {
     add: function(datas){
-      return $http.post(baseUrl+ "ideas", datas);
-      // return $resource((baseUrl+ "ideas", datas));
+      return $http({
+       method: 'POST',
+       url: baseUrl+ "ideas",
+       headers: {
+         'Content-Type': undefined
+       },
+       data: datas
+      });
     },
     getAll: function(){
-      return $http.get(baseUrl+ "ideas");
+      return $http.get(baseUrl+ "ideas/");
     },
     getOne: function(id){
       return $http.get(baseUrl+ "ideas/"+id);
