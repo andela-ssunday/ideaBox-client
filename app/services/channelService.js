@@ -1,5 +1,4 @@
-var app = angular.module("main");
-
+'use strict';
 app.factory("channelService", ['$http','baseUrl', function($http,baseUrl){
   return {
     add: function(data){

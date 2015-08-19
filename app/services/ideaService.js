@@ -1,4 +1,4 @@
-var app = angular.module("main");
+'use strict';
 app.factory("ideaService", ['$http','baseUrl', function($http,baseUrl){
 
   return {

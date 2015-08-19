@@ -1,10 +1,8 @@
-var app = angular.module("main")
-
+'use strict';
 app.controller("mainCtrl",['$scope','ideaService','channelService','remarkService', function($scope,ideaService,channelService,remarkService){
     ideaService.getAll()
       .success(function(data){
         $scope.ideas = data;
-        console.log($scope.ideas)
       })
 
 
